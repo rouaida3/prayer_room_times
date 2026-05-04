@@ -27,13 +27,23 @@ body::before {
   backdrop-filter: blur(10px);
 }
 
-.container {
-  padding: 40px;
+.header {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100px;
+  height: auto;
 }
 
 h1 {
   font-size: 3em;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 #clock {
