@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+
+  background: url("mosque.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.container {
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.container {
+  padding: 40px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+#clock {
+  font-size: 4em;
+  margin: 10px 0;
+}
+
+#date {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.prayer-times {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.prayer {
+  font-size: 1.5em;
+  padding: 15px;
+  border-radius: 10px;
+  background: #123;
+  width: 150px;
+}
+
+.prayer span {
+  display: block;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.active {
+  background: #1abc9c;
+  color: black;
+}
+
+#next-prayer {
+  font-size: 2em;
+  margin-top: 20px;
+}
